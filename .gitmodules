@@ -1,0 +1,12 @@
+[submodule "Play.Catalog"]
+	path = Play.Catalog
+	url = https://github.com/CMGeorges/Play.Catalog.git
+[submodule "Play.Identity"]
+	path = Play.Identity
+	url = https://github.com/CMGeorges/Play.Identity.git
+[submodule "Play.Inventory"]
+	path = Play.Inventory
+	url = https://github.com/CMGeorges/Play.Inventory.git
+[submodule "Play.Common"]
+	path = Play.Common
+	url = https://github.com/CMGeorges/Play.Common.git
