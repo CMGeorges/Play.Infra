@@ -7,27 +7,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Catalog", "Play.Catalo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F9BF0349-867A-417A-B4E1-BF4F567B75D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Catalog.Contracts", "Play.Catalog\src\Play.Catalog.Contracts\Play.Catalog.Contracts.csproj", "{72E1B502-BA05-40E6-9CA1-34EBBAAC5C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Catalog.Contracts", "Play.Catalog\src\Play.Catalog.Contracts\Play.Catalog.Contracts.csproj", "{72E1B502-BA05-40E6-9CA1-34EBBAAC5C63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Catalog.Service", "Play.Catalog\src\Play.Catalog.Service\Play.Catalog.Service.csproj", "{B288D225-E8F9-4AF9-B0EC-3B54EE547529}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Catalog.Service", "Play.Catalog\src\Play.Catalog.Service\Play.Catalog.Service.csproj", "{B288D225-E8F9-4AF9-B0EC-3B54EE547529}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Common", "Play.Common", "{98964297-689E-4CF7-A86A-8AC46A269C9A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CDF8565E-73BC-4930-9583-F71A27B3C93E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Common", "Play.Common\src\Play.Common\Play.Common.csproj", "{3A2C75D8-0AD2-4FE4-9549-8C13D8AD7E17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Common", "Play.Common\src\Play.Common\Play.Common.csproj", "{3A2C75D8-0AD2-4FE4-9549-8C13D8AD7E17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Identity", "Play.Identity", "{DB3FE304-96A9-474B-BA75-24599C9494DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E031FEB6-60CC-47EB-9092-B25E273FD974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Identity.Service", "Play.Identity\src\Play.Identity.Service\Play.Identity.Service.csproj", "{A163CF30-3132-431F-B745-69B935E1C4E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Identity.Service", "Play.Identity\src\Play.Identity.Service\Play.Identity.Service.csproj", "{A163CF30-3132-431F-B745-69B935E1C4E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Inventory", "Play.Inventory", "{5B27A9C1-C12F-451C-9E30-F356DE9E414D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EC839BCC-691A-4402-AAEC-053BB34B0685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Inventory.Service", "Play.Inventory\src\Play.Inventory.Service\Play.Inventory.Service.csproj", "{05741AEC-1047-47DA-BDAD-9D146B6A6FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Inventory.Service", "Play.Inventory\src\Play.Inventory.Service\Play.Inventory.Service.csproj", "{05741AEC-1047-47DA-BDAD-9D146B6A6FF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{039FB5DB-A64B-4D45-BEC4-F3EBD4E216F7}"
+	ProjectSection(SolutionItems) = preProject
+		Play.Infra\docker-compose.yml = Play.Infra\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7F22AE11-3711-4755-B713-BBC4C8426CA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,9 +44,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{72E1B502-BA05-40E6-9CA1-34EBBAAC5C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -102,6 +106,21 @@ Global
 		{05741AEC-1047-47DA-BDAD-9D146B6A6FF8}.Release|x64.Build.0 = Release|Any CPU
 		{05741AEC-1047-47DA-BDAD-9D146B6A6FF8}.Release|x86.ActiveCfg = Release|Any CPU
 		{05741AEC-1047-47DA-BDAD-9D146B6A6FF8}.Release|x86.Build.0 = Release|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Debug|x64.Build.0 = Debug|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Debug|x86.Build.0 = Debug|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Release|x64.ActiveCfg = Release|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Release|x64.Build.0 = Release|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Release|x86.ActiveCfg = Release|Any CPU
+		{7F22AE11-3711-4755-B713-BBC4C8426CA8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F9BF0349-867A-417A-B4E1-BF4F567B75D1} = {781E718B-00EB-48B8-82E7-89C2D809B06C}
@@ -113,5 +132,8 @@ Global
 		{A163CF30-3132-431F-B745-69B935E1C4E7} = {E031FEB6-60CC-47EB-9092-B25E273FD974}
 		{EC839BCC-691A-4402-AAEC-053BB34B0685} = {5B27A9C1-C12F-451C-9E30-F356DE9E414D}
 		{05741AEC-1047-47DA-BDAD-9D146B6A6FF8} = {EC839BCC-691A-4402-AAEC-053BB34B0685}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {954580CA-8307-4E99-BF20-E1F4D7958BED}
 	EndGlobalSection
 EndGlobal

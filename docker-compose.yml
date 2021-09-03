@@ -1,0 +1,69 @@
+version: '3.4'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    ports: 
+      - 27017:27017
+    volumes: 
+      - mongodbdata:/data/db
+    networks: 
+      - play_microservice
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes: 
+      - rabbitmqdata:/var/lib/rabbitmq
+    hostname: rabbitmq
+    networks: 
+      - play_microservice
+
+  play.catalog.service:
+    image: ${DOCKER_REGISTRY-}playcatalogservice
+    build:
+      context: .
+      dockerfile: Play.Catalog/src/Play.Catalog.Service/Dockerfile
+    depends_on: 
+        - rabbitmq
+        - mongo
+    networks: 
+      - play_microservice
+
+  play.identity.service:
+    image: ${DOCKER_REGISTRY-}playidentityservice
+    build:
+      context: .
+      dockerfile: Play.Identity/src/Play.Identity.Service/Dockerfile
+    depends_on: 
+        - rabbitmq
+        - mongo
+    restart: always
+    networks: 
+      - play_microservice
+
+  play.inventory.service:
+    image: ${DOCKER_REGISTRY-}playinventoryservice
+    build:
+      context: .
+      dockerfile: Play.Inventory/src/Play.Inventory.Service/Dockerfile
+    depends_on: 
+        - rabbitmq
+        - mongo
+    networks: 
+      - play_microservice
+
+volumes:
+      mongodbdata: 
+        name: mongodbdata
+      rabbitmqdata:
+        name: rabbitmqdata
+networks: 
+   play_microservice:
+      
